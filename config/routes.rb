@@ -1,4 +1,7 @@
 HackerNewsTimeLapse::Application.routes.draw do
+  
+  match 'timelapse/:id' => 'timelapses#show'
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -103,7 +103,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  compass
+  compass (>= 0.11.5)
   haml
   mysql2 (~> 0.2.6)
   nokogiri

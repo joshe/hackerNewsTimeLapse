@@ -1,0 +1,9 @@
+%table
+  - @links.each do |link|
+    %tr
+      %td.title
+        = link.rank
+      %td.title
+        %a{:href => link.href}= link.title
+      %td
+        %a{:href => link.comments} Comments
