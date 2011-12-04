@@ -20,7 +20,9 @@ gem 'mysql2', '~> 0.2.6'
 # Bundle the extra gems:
 # gem 'bj'
 gem 'nokogiri'
-gem 'scheduler_daemon'
+gem 'scheduler_daemon', :git => 'git://github.com/ssoroka/scheduler_daemon.git'
+gem "compass", ">= 0.11.5"
+gem 'haml'
 
 # gem 'sqlite3-ruby', :require => 'sqlite3'
 # gem 'aws-s3', :require => 'aws/s3'
