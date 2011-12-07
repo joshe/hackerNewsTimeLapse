@@ -1,0 +1,11 @@
+%input#mainSlider{:type => "range", :max => @allTimestamps[0].id, :min => @allTimestamps[@allTimestamps.length - 1].id, :step => 1, :value => @start}
+#currentDate Now
+%table#links
+  - @links.each do |link|
+    %tr
+      %td.title
+        = link.rank
+      %td.title
+        %a{:href => link.href}= link.title
+      %td
+        %a{:href => link.comments} Comments

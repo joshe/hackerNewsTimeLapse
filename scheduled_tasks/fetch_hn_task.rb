@@ -5,7 +5,7 @@ class FetchHnTask < Scheduler::SchedulerTask
   environments :all
   # environments :staging, :production
   
-  every '5m'
+  every '15m', :first_at => Chronic.parse("10 pm")
   # other examples:
   # every '24h', :first_at => Chronic.parse('next midnight')
   # cron '* 4 * * *'  # cron style
@@ -33,5 +33,6 @@ class FetchHnTask < Scheduler::SchedulerTask
     
     # use log() for writing to scheduler daemon log
     log("Added timestamp")
+    log(Time.now)
   end
 end
