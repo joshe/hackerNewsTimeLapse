@@ -4,7 +4,7 @@ class TimelapsesController < ApplicationController
   
   def show 
     @timestamp = Timestamp.find(params[:id])
-    @allTimestamps = Timestamp.find(:all, :order => "id desc", :limit => 100)
+    @last = Timestamp.last
     @links = @timestamp.links
     @start = params[:id]
     
@@ -19,7 +19,7 @@ class TimelapsesController < ApplicationController
   
   def now 
     @timestamp = Timestamp.last
-    @allTimestamps = Timestamp.find(:all, :order => "id desc", :limit => 100)
+    @last = @timestamp
     @links = @timestamp.links
     @start = @timestamp.id
     

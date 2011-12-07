@@ -1,4 +1,4 @@
-%input#mainSlider{:type => "range", :max => @allTimestamps[0].id, :min => @allTimestamps[@allTimestamps.length - 1].id, :step => 1, :value => @start}
+%input#mainSlider{:type => "range", :max => @last.id, :min => 1, :step => 1, :value => @start}
 #currentDate Now
 %table#links
   - @links.each do |link|
