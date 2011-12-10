@@ -1,11 +1,9 @@
-%input#mainSlider{:type => "range", :max => @last.id, :min => 1, :step => 1, :value => @start}
-#currentDate Now
-%table#links
+#slider{:data => { :min => 1, :max => @last.id, :value => @last.id}}
+#currentDate= "#{distance_of_time_in_words_to_now(@timestamp.created_at)} ago"
+#links
   - @links.each do |link|
-    %tr
-      %td.title
-        = link.rank
-      %td.title
-        %a{:href => link.href}= link.title
-      %td
-        %a{:href => link.comments} Comments
+    .link
+      .rank
+        = "#{link.rank}. "
+      %a.title{:href => link.href}= link.title
+      %a.comments{:href => link.comments} Comments

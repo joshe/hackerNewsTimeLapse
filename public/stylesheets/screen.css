@@ -68,6 +68,89 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* line 8, ../../app/stylesheets/screen.scss */
-#mainSlider {
+body {
+  margin: 8px;
+  font-family: Verdana;
+  color: #828282;
+  font-size: 10pt;
+}
+
+/* line 16, ../../app/stylesheets/screen.scss */
+input {
+  font-family: Courier;
+  font-size: 10pt;
+  color: #000000;
+}
+
+/* line 17, ../../app/stylesheets/screen.scss */
+input[type=\"submit\"] {
+  font-family: Verdana;
+}
+
+/* line 18, ../../app/stylesheets/screen.scss */
+textarea {
+  font-family: Courier;
+  font-size: 10pt;
+  color: #000000;
+}
+
+/* line 20, ../../app/stylesheets/screen.scss */
+a:link {
+  color: #000000;
+  text-decoration: none;
+}
+
+/* line 21, ../../app/stylesheets/screen.scss */
+a:visited {
+  color: #828282;
+  text-decoration: none;
+}
+
+/* line 23, ../../app/stylesheets/screen.scss */
+#container {
+  width: 85%;
+  margin: 0 auto;
+  background-color: #f6f6ef;
+}
+/* line 28, ../../app/stylesheets/screen.scss */
+#container #slider {
   width: 600px;
+  margin: 15px;
+}
+/* line 33, ../../app/stylesheets/screen.scss */
+#container .header {
+  background-color: #ff6600;
+  padding: 5px 6px 6px 6px;
+}
+/* line 37, ../../app/stylesheets/screen.scss */
+#container .header a:link, #container .header a:visited {
+  color: black;
+}
+/* line 41, ../../app/stylesheets/screen.scss */
+#container .header .logo {
+  font-weight: bold;
+}
+/* line 47, ../../app/stylesheets/screen.scss */
+#container #links .link {
+  clear: both;
+}
+/* line 52, ../../app/stylesheets/screen.scss */
+#container #links .link .rank {
+  float: left;
+  width: 20px;
+  text-align: right;
+  margin-right: 5px;
+}
+/* line 59, ../../app/stylesheets/screen.scss */
+#container #links .link .title {
+  float: left;
+}
+/* line 63, ../../app/stylesheets/screen.scss */
+#container #links .link .comments {
+  float: left;
+  clear: both;
+  margin-left: 25px;
+  font-size: 7pt;
+  color: #828282;
+  margin-bottom: 5px;
 }

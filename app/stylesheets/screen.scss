@@ -5,6 +5,72 @@
 
 @import "compass/reset";
 
-#mainSlider {
-  width: 600px;
+body {
+  margin: 8px;
+  font-family: Verdana;
+  color: #828282;
+  font-size: 10pt;
+}
+
+
+input    { font-family:Courier; font-size:10pt; color:#000000; }
+input[type=\"submit\"] { font-family:Verdana; }
+textarea { font-family:Courier; font-size:10pt; color:#000000; }
+
+a:link    { color:#000000; text-decoration:none; }
+a:visited { color:#828282; text-decoration:none; }
+
+#container {
+  width: 85%;
+  margin: 0 auto;
+  background-color: #f6f6ef;
+  
+  #slider {
+    width: 600px;
+    margin: 15px;
+  }
+  
+  .header {
+    background-color: #ff6600;
+    padding: 5px 6px 6px 6px;
+    
+    a:link, a:visited {
+      color: black;
+    }
+    
+    .logo {
+      font-weight: bold;
+    }
+  }
+  
+  #links {
+    .link {
+      clear: both;
+    
+      $rankWidth: 20px;
+      $rankMarginRight: 5px;
+      .rank {
+        float: left;
+        width: $rankWidth;
+        text-align: right;
+        margin-right: $rankMarginRight;
+      }
+    
+      .title {
+        float: left;
+      }
+    
+      .comments {
+        float: left;
+        clear: both;
+        margin-left: $rankWidth + $rankMarginRight;
+        
+        font-size: 7pt;
+        color: #828282;
+        margin-bottom: 5px;
+      }
+    }
+    
+  }
+  
 }
