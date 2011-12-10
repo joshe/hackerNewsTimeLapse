@@ -9,11 +9,13 @@ $(document).ready(function(){
     max: sliderMax,
     value: sliderMax,
     step: 1, 
-    change: function(event, ui){
+    stop: function(event, ui){
       sliderVal = ui.value;
+      
+      var handleLeft = $(".ui-slider-handle").offset().left;      
      
       $.get("/timelapse/" + sliderVal + ".json", function(data){
-        $("#currentDate").text(data.timestamp);
+        $("#currentDate").text(data.timestamp).css({left: handleLeft - 35});
 
         $("#links").empty();
         $(data.links).each(function(){

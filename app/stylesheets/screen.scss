@@ -4,6 +4,7 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+@import "compass/css3";
 
 body {
   margin: 8px;
@@ -11,7 +12,6 @@ body {
   color: #828282;
   font-size: 10pt;
 }
-
 
 input    { font-family:Courier; font-size:10pt; color:#000000; }
 input[type=\"submit\"] { font-family:Verdana; }
@@ -25,9 +25,21 @@ a:visited { color:#828282; text-decoration:none; }
   margin: 0 auto;
   background-color: #f6f6ef;
   
+  #currentDate {
+    position: absolute;
+    left: 685px;
+    
+    background-color: white;
+    border: 1px solid #ccc;
+    @include border-radius(5px);
+    padding: 3px;
+    font-size: 8pt;
+    
+  }
+  
   #slider {
     width: 600px;
-    margin: 15px;
+    margin: 15px 15px 8px 15px;
   }
   
   .header {
@@ -44,6 +56,8 @@ a:visited { color:#828282; text-decoration:none; }
   }
   
   #links {
+    margin-top: 30px;
+    
     .link {
       clear: both;
     

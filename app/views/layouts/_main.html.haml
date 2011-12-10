@@ -1,5 +1,5 @@
 #slider{:data => { :min => 1, :max => @last.id, :value => @last.id}}
-#currentDate= "#{distance_of_time_in_words_to_now(@timestamp.created_at)} ago"
+#currentDate= @currentTime
 #links
   - @links.each do |link|
     .link
