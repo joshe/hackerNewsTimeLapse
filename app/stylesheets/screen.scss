@@ -55,6 +55,16 @@ a:visited { color:#828282; text-decoration:none; }
     }
   }
   
+  .footer {
+    clear: both;
+    text-align: right;
+    padding: 7px;
+    
+    a:link, a:visited {
+      color: #ff6600;
+    }
+  }
+  
   #links {
     margin-top: 30px;
     

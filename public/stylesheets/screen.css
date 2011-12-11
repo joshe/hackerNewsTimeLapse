@@ -146,25 +146,35 @@ a:visited {
   font-weight: bold;
 }
 /* line 58, ../../app/stylesheets/screen.scss */
+#container .footer {
+  clear: both;
+  text-align: right;
+  padding: 7px;
+}
+/* line 63, ../../app/stylesheets/screen.scss */
+#container .footer a:link, #container .footer a:visited {
+  color: #ff6600;
+}
+/* line 68, ../../app/stylesheets/screen.scss */
 #container #links {
   margin-top: 30px;
 }
-/* line 61, ../../app/stylesheets/screen.scss */
+/* line 71, ../../app/stylesheets/screen.scss */
 #container #links .link {
   clear: both;
 }
-/* line 66, ../../app/stylesheets/screen.scss */
+/* line 76, ../../app/stylesheets/screen.scss */
 #container #links .link .rank {
   float: left;
   width: 20px;
   text-align: right;
   margin-right: 5px;
 }
-/* line 73, ../../app/stylesheets/screen.scss */
+/* line 83, ../../app/stylesheets/screen.scss */
 #container #links .link .title {
   float: left;
 }
-/* line 77, ../../app/stylesheets/screen.scss */
+/* line 87, ../../app/stylesheets/screen.scss */
 #container #links .link .comments {
   float: left;
   clear: both;

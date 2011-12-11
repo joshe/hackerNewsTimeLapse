@@ -5,7 +5,7 @@ class FetchHnTask < Scheduler::SchedulerTask
   environments :all
   # environments :staging, :production
   
-  every '15m', :first_at => Chronic.parse("10 pm")
+  every '15m', :first_at => Chronic.parse("9 pm")
   # other examples:
   # every '24h', :first_at => Chronic.parse('next midnight')
   # cron '* 4 * * *'  # cron style
